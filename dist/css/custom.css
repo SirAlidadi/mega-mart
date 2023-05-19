@@ -1,0 +1,55 @@
+#banner-slider .owl-next {
+  background: #F3F9FB;
+  width: 60px;
+  height: 60px;
+  color: #008ECC;
+  font-size: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+  top: 40%;
+}
+
+#banner-slider .owl-prev {
+  background: #F3F9FB;
+  width: 60px;
+  height: 60px;
+  color: #008ECC;
+  font-size: 32px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 40%;
+}
+
+#banner-slider .owl-dots {
+  position: absolute;
+  left: 72px;
+  bottom: 32px;
+  flex-direction: row-reverse;
+}
+
+#banner-slider .owl-dots .owl-dot.active span{
+  width: 24px;
+  background-color: #FFF;
+}
+
+@media screen and (max-width: 1140px) {
+  #banner-slider .owl-prev {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    top: 40%;
+  }
+
+  #banner-slider .owl-next {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    top: 40%;
+  }
+
+  #banner-slider .owl-dots {
+    display: none;
+  }
+}

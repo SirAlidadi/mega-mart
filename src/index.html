@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../dist/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../dist/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../dist/css/output.css">
+  <link rel="stylesheet" href="../dist/css/custom.css">
+  <title>مگا مارکت - صفحه اصلی</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <section class="bg-[#F5F5F5] pb-[10px] pt-[10px]">
+      <div class="container m-auto grid grid-cols-12">
+        <div class="col-span-8">
+          <p class="text-[#666666] font-light text-[14px] ps-4 sm:ps-0">به مگا مارکت در سراسر جهان خوش آمدید!</p>
+        </div>
+
+        <div class="col-span-4 gap-4 justify-end hidden xl:flex">
+          <p class="flex items-center gap-2 text-[#666666] font-light text-[14px]"><iconify-icon icon="iconoir:delivery-truck" style="color: #008ECC; font-size: 18px"></iconify-icon> سفارشات را پیگیری کنید</p>
+          <div class="border-l-2"></div>
+          <p class="flex items-center gap-2 text-[#666666] font-light text-[14px]"><iconify-icon icon="tabler:discount-2" style="color: #008ECC; font-size: 18px"></iconify-icon> همه پیشنهادات</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pb-[22px] pt-[22px] border-b-2 hidden xl:block">
+      <!-- navbar -->
+      <div class="container m-auto grid grid-cols-12">
+        <div class="col-span-3 flex items-center gap-2">
+          <h1 class="font-bold text-2xl font-hanken text-[#008ECC]">Mega Market</h1>
+        </div>
+
+        <div class="col-span-5 flex items-center relative">
+          <iconify-icon class="absolute right-[16px]" icon="material-symbols:search" style="color: #008ECC; font-size: 18px"></iconify-icon>
+          <input class="w-full bg-[#F3F9FB] p-[10px] rounded-md text-[14px] ps-[48px] outline-none" type="text" name="search" placeholder="جستجوی ملزومات، مواد غذایی و موارد دیگر...">
+        </div>
+
+        <div class="col-span-4 flex items-center gap-8 justify-end">
+          <a class="flex items-center gap-1 hover:text-[#E3BC01] text-[#666666] text-[16px]" href="#"><iconify-icon icon="mdi:user-circle-outline" style="color: #008ECC; font-size: 18px"></iconify-icon> ورود / ثبت نام</a>
+          <a class="flex items-center gap-1 hover:text-[#E3BC01] text-[#666666] text-[16px]" href="#"><iconify-icon icon="icons8:buy" style="color: #008ECC; font-size: 18px"></iconify-icon> سبد خرید</a>
+        </div>
+      </div>
+      <!-- end navbar -->
+    </nav>
+
+    <section class="border-b-2 hidden xl:block">
+      <div class="container m-auto p-[18px] flex justify-center items-center gap-4">
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              مواد غذایی
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+  
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              میوه های ممتاز
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+        
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              خانه و آشپزخانه
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+  
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              مد روز
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+  
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              الکترونیک
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+        
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              زیبایی
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+  
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              بهبود منزل
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+  
+        <div x-data="{ open: false }" class="relative inline-block text-left">
+          <div>
+            <button @click="open = !open" type="button" class="inline-flex gap-3 p-[8px] rounded-full hover:bg-[#008ECC] hover:text-[#fff] bg-[#F3F9FB] text-[14px] group/dropdown" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              ورزش، اسباب بازی و چمدان
+              <iconify-icon class="text-[#008ECC] group-hover/dropdown:text-[#fff]" icon="mdi:chevron-down" style="font-size: 18px"></iconify-icon>
+            </button>
+          </div>
+  
+          <div x-cloak x-transition @click.outside="open = false" x-show="open" class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-0">عنوان اول</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-1">عنوان دوم</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm text-right" role="menuitem" tabindex="-1" id="menu-item-2">عنوان سوم</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <nav x-data="{ open: false }" class="pb-[22px] pt-[22px] border-b-2 xl:hidden">
+      <!-- navbar -->
+      <div class="container m-auto grid grid-cols-12 px-4 sm:px-0">
+        <div class="col-span-6 flex items-center gap-2">
+          <button class="h-[32px]" @click="open = true">
+            <iconify-icon icon="material-symbols:menu-rounded" style="color: #008ECC; font-size: 32px"></iconify-icon>
+          </button>
+
+          <h1 class="font-bold text-xl font-hanken text-[#008ECC]">Mega Market</h1>
+        </div>
+
+        <div class="col-span-6 flex items-center gap-4 sm:gap-8 justify-end">
+          <a class="flex items-center gap-1 hover:text-[#E3BC01] text-[#666666] text-[12px]" href="#"><iconify-icon icon="mdi:user-circle-outline" style="color: #008ECC; font-size: 18px"></iconify-icon> ورود / ثبت نام</a>
+
+          <a class="flex items-center gap-1 hover:text-[#E3BC01] text-[#666666] text-[12px]" href="#"><iconify-icon icon="icons8:buy" style="color: #008ECC; font-size: 18px"></iconify-icon> سبد خرید</a>
+        </div>
+      </div>
+
+      <section class="w-[300px] h-[100vh] absolute bg-white z-10" :class="open ? 'top-0  right-[0px]' : 'top-0 right-[-400px]'">
+        <div class="text-left w-full border-b-2">
+          <iconify-icon @click="open=false" class="p-2 cursor-pointer" icon="material-symbols:close-rounded" style="color: #008ECC; font-size: 32px"></iconify-icon>
+        </div>
+
+        <div>
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              مواد غذایی
+            </span>
+          </a>
+  
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              میوه های ممتاز
+            </span>
+          </a>
+  
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              خانه و آشپزخانه
+            </span>
+          </a>
+          
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              مد روز
+            </span>
+          </a>
+          
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              الکترونیک
+            </span>
+          </a>
+  
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              زیبایی
+            </span>
+          </a>
+  
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              بهبود منزل
+            </span>
+          </a>
+  
+          <a href="#">
+            <span class="block w-full p-4 border-b-2 hover:bg-slate-200">
+              ورزش، اسباب بازی و چمدان
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- end navbar -->
+    </nav>
+  </header>
+
+  <!-- body -->
+  <main>
+    <section class="container m-auto !rounded-xl mt-[16px] overflow-hidden px-4 sm:px-0">
+      <div id="banner-slider" class="owl-carousel owl-theme">
+        <div class="relative">
+          <img src="../dist/images/banner-1.png" alt="#">
+
+          <div class="absolute left-[10%] top-[25%] text-white w-[40%]">
+            <h4 class="font-bold text-[1.7vw]">بهترین معامله آنلاین برای ساعت های هوشمند</h4>
+            <h3 class="font-bold text-[3vw]">SMART WEARABLE</h3>
+            <h5 class="font-light text-[1.7vw] text-red-500">تا 80% تخفیف</h5>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img src="../dist/images/banner-2.png" alt="#">
+
+          <div class="absolute left-[10%] top-[25%] text-white w-[50%]">
+            <h5 class="font-bold text-[1.7vw]">بهترین معامله آنلاین برای گوشی های هوشمند</h5>
+            <h3 class="font-bold text-[3vw]">Galaxy S22 Ultra</h3>
+            <h5 class="font-light text-[1.7vw] text-red-500">تا 20% تخفیف</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../dist/js/jquery-3.7.0.min.js"></script>
+  <script src="../dist/js/owl.carousel.min.js"></script>
+  
+  <script>
+    $('#banner-slider').owlCarousel({
+      rtl: true,
+      loop:true,
+      margin:10,
+      nav:true,
+      items: 1
+    })
+  </script>
+
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../dist/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="../dist/css/output.css">
   <link rel="stylesheet" href="../dist/css/custom.css">
-  <title>مگا مارکت - صفحه اصلی</title>
+  <title>مگا مارت - صفحه اصلی</title>
 </head>
 <body>
   <!-- header -->
@@ -28,11 +28,11 @@
       </div>
     </section>
 
-    <nav class="pb-[22px] pt-[22px] border-b-2 hidden xl:block">
+    <nav class="pb-[22px] pt-[22px] border-b-2 hidden xl:block bg-white">
       <!-- navbar -->
       <div class="container m-auto grid grid-cols-12">
         <div class="col-span-3 flex items-center gap-2">
-          <h1 class="font-bold text-2xl font-hanken text-[#008ECC]">Mega Market</h1>
+          <a href="" class="font-bold text-2xl font-hanken text-[#008ECC]">MegaMart</a>
         </div>
 
         <div class="col-span-5 flex items-center relative">
@@ -48,7 +48,7 @@
       <!-- end navbar -->
     </nav>
 
-    <section class="border-b-2 hidden xl:block">
+    <section class="border-b-2 hidden xl:block bg-white">
       <div class="container m-auto p-[18px] flex justify-center items-center gap-4">
         <div x-data="{ open: false }" class="relative inline-block text-left">
           <div>
@@ -197,7 +197,7 @@
             <iconify-icon icon="material-symbols:menu-rounded" style="color: #008ECC; font-size: 32px"></iconify-icon>
           </button>
 
-          <h1 class="font-bold text-xl font-hanken text-[#008ECC]">Mega Market</h1>
+          <a href="" class="font-bold text-2xl font-hanken text-[#008ECC]">MegaMart</a>
         </div>
 
         <div class="col-span-6 flex items-center gap-4 sm:gap-8 justify-end">
@@ -207,7 +207,7 @@
         </div>
       </div>
 
-      <section class="w-[300px] h-[100vh] absolute bg-white z-10" :class="open ? 'top-0  right-[0px]' : 'top-0 right-[-400px]'">
+      <section class="w-[300px] h-[100vh] top-0 fixed bg-white z-10" :class="open ? 'right-[0px]' : 'right-[-400px]'" x-cloak>
         <div class="text-left w-full border-b-2">
           <iconify-icon @click="open=false" class="p-2 cursor-pointer" icon="material-symbols:close-rounded" style="color: #008ECC; font-size: 32px"></iconify-icon>
         </div>
@@ -261,22 +261,27 @@
             </span>
           </a>
         </div>
+
+        <div class="col-span-5 flex items-center relative px-4 mt-5">
+          <iconify-icon class="absolute right-[32px]" icon="material-symbols:search" style="color: #008ECC; font-size: 18px"></iconify-icon>
+          <input class="w-full bg-[#F3F9FB] p-[10px] rounded-md text-[14px] ps-[48px] outline-none" type="text" name="search" placeholder="جستجو کنید ...">
+        </div>
       </section>
       <!-- end navbar -->
     </nav>
   </header>
 
   <!-- body -->
-  <main>
+  <main class="overflow-hidden">
     <section class="container m-auto !rounded-xl mt-[16px] overflow-hidden px-4 sm:px-0">
       <div id="banner-slider" class="owl-carousel owl-theme">
         <div class="relative">
           <img src="../dist/images/banner-1.png" alt="#">
 
           <div class="absolute left-[10%] top-[25%] text-white w-[40%]">
-            <h4 class="font-bold text-[1.7vw]">بهترین معامله آنلاین برای ساعت های هوشمند</h4>
+            <h4 class="font-bold text-[1.6vw]">بهترین معامله آنلاین برای ساعت های هوشمند</h4>
             <h3 class="font-bold text-[3vw]">SMART WEARABLE</h3>
-            <h5 class="font-light text-[1.7vw] text-red-500">تا 80% تخفیف</h5>
+            <h5 class="font-light text-[1.6vw] text-red-500">تا 80% تخفیف</h5>
           </div>
         </div>
 
@@ -284,14 +289,312 @@
           <img src="../dist/images/banner-2.png" alt="#">
 
           <div class="absolute left-[10%] top-[25%] text-white w-[50%]">
-            <h5 class="font-bold text-[1.7vw]">بهترین معامله آنلاین برای گوشی های هوشمند</h5>
+            <h5 class="font-bold text-[1.6vw]">بهترین معامله آنلاین برای گوشی های هوشمند</h5>
             <h3 class="font-bold text-[3vw]">Galaxy S22 Ultra</h3>
-            <h5 class="font-light text-[1.7vw] text-red-500">تا 20% تخفیف</h5>
+            <h5 class="font-light text-[1.6vw] text-red-500">تا 20% تخفیف</h5>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="container m-auto mt-[32px]">
+      <div class="relative flex justify-between px-4 sm:px-0">
+        <h1 class="text-[#666666] text-[16px] sm:text-[20px] font-bold border-b-4 border-[#008ECC] w-fit pb-2">بهترین پیشنهاد های <span class="text-[#008ECC]">تلفن همراه</span></h1>
+
+        <a class="flex items-center text-[14px] hover:text-[#E3BC01]" href="#">مشاهده همه <iconify-icon icon="material-symbols:chevron-left" style="color: #008ECC; font-size: 18px"></iconify-icon></a>
+        <hr class="absolute bottom-0 w-full">
+      </div>
+
+      <div class="flex sm:gap-5 2xl:gap-10 justify-center mt-[24px] mb-10 flex-wrap flex-col sm:flex-row px-4 sm:px-0">
+        
+        <div class="min-w-[227px] h-[295px] bg-[#f4f4f4] rounded-[16px] hover:border-[#008ECC] hover:shadow-2xl border-2 mt-2 sm:mt-0">
+          <a href="#">
+            <div class="flex justify-center items-center h-[189px]">
+              <img src="../dist/images/mobile-1.png"  alt="mobile">
+            </div>
+  
+            <div class=" w-full h-[101px] bg-[#FFFFFF] rounded-b-[16px] p-4">
+              <p class="text-[14px] font-extrabold">Galaxy S22 Ultra</p>
+              <div text>
+                <span class="text-[14px] font-extrabold">۱۰,۰۰۰,۰۰۰ تومان</span> <del class="text-[14px]">۱۶,۰۰۰,۰۰۰ تومان</del>
+              </div>
+              <hr class="border-[#EDEDED] mt-2"/>
+              <p class="mt-1 text-[14px] text-[#249B3E]">۶,۰۰۰,۰۰۰ تومان - تخفیف</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="min-w-[227px] h-[295px] bg-[#f4f4f4] rounded-[16px] hover:border-[#008ECC] hover:shadow-2xl border-2 mt-4 sm:mt-0">
+          <a href="#">
+            <div class="flex justify-center items-center h-[189px]">
+              <img src="../dist/images/mobile-2.png"  alt="mobile">
+            </div>
+  
+            <div class=" w-full h-[101px] bg-[#FFFFFF] rounded-b-[16px] p-4">
+              <p class="text-[14px] font-extrabold">Galaxy M13 (4GB | 64 GB )</p>
+              <div text>
+                <span class="text-[14px] font-extrabold">۱۰,۰۰۰,۰۰۰ تومان</span> <del class="text-[14px]">۱۶,۰۰۰,۰۰۰ تومان</del>
+              </div>
+              <hr class="border-[#EDEDED] mt-2"/>
+              <p class="mt-1 text-[14px] text-[#249B3E]">۶,۰۰۰,۰۰۰ تومان - تخفیف</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="min-w-[227px] h-[295px] bg-[#f4f4f4] rounded-[16px] hover:border-[#008ECC] hover:shadow-2xl border-2 mt-4 sm:mt-0">
+          <a href="#">
+            <div class="flex justify-center items-center h-[189px]">
+              <img src="../dist/images/mobile-3.png"  alt="mobile">
+            </div>
+  
+            <div class=" w-full h-[101px] bg-[#FFFFFF] rounded-b-[16px] p-4">
+              <p class="text-[14px] font-extrabold">Galaxy M33 (4GB | 64 GB )</p>
+              <div text>
+                <span class="text-[14px] font-extrabold">۱۰,۰۰۰,۰۰۰ تومان</span> <del class="text-[14px]">۱۶,۰۰۰,۰۰۰ تومان</del>
+              </div>
+              <hr class="border-[#EDEDED] mt-2"/>
+              <p class="mt-1 text-[14px] text-[#249B3E]">۶,۰۰۰,۰۰۰ تومان - تخفیف</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="min-w-[227px] h-[295px] bg-[#f4f4f4] rounded-[16px] hover:border-[#008ECC] hover:shadow-2xl border-2 mt-4 sm:mt-0">
+          <a href="#">
+            <div class="flex justify-center items-center h-[189px]">
+              <img src="../dist/images/mobile-4.png"  alt="mobile">
+            </div>
+  
+            <div class=" w-full h-[101px] bg-[#FFFFFF] rounded-b-[16px] p-4">
+              <p class="text-[14px] font-extrabold">Galaxy M53 (4GB | 64 GB )</p>
+              <div text>
+                <span class="text-[14px] font-extrabold">۱۰,۰۰۰,۰۰۰ تومان</span> <del class="text-[14px]">۱۶,۰۰۰,۰۰۰ تومان</del>
+              </div>
+              <hr class="border-[#EDEDED] mt-2"/>
+              <p class="mt-1 text-[14px] text-[#249B3E]">۶,۰۰۰,۰۰۰ تومان - تخفیف</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="min-w-[227px] h-[295px] bg-[#f4f4f4] rounded-[16px] hover:border-[#008ECC] hover:shadow-2xl border-2 mt-4 sm:mt-0">
+          <a href="#">
+            <div class="flex justify-center items-center h-[189px]">
+              <img src="../dist/images/mobile-5.png"  alt="mobile">
+            </div>
+  
+            <div class=" w-full h-[101px] bg-[#FFFFFF] rounded-b-[16px] p-4">
+              <p class="text-[14px] font-extrabold">Galaxy S22 Ultra</p>
+              <div text>
+                <span class="text-[14px] font-extrabold">۱۰,۰۰۰,۰۰۰ تومان</span> <del class="text-[14px]">۱۶,۰۰۰,۰۰۰ تومان</del>
+              </div>
+              <hr class="border-[#EDEDED] mt-2"/>
+              <p class="mt-1 text-[14px] text-[#249B3E]">۶,۰۰۰,۰۰۰ تومان - تخفیف</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container m-auto mt-[32px]">
+      <div class="relative flex justify-between px-4 sm:px-0">
+        <h1 class="text-[#666666] text-[16px] sm:text-[20px] font-bold border-b-4 border-[#008ECC] w-fit pb-2">خرید از <span class="text-[#008ECC]">دسته بندی های برتر</span></h1>
+
+        <a class="flex items-center text-[14px] hover:text-[#E3BC01]" href="#">مشاهده همه <iconify-icon icon="material-symbols:chevron-left" style="color: #008ECC; font-size: 18px"></iconify-icon></a>
+        <hr class="absolute bottom-0 w-full">
+      </div>
+
+      <div class="flex sm:gap-5 2xl:gap-10 justify-center mt-[24px] mb-10 flex-wrap flex-col sm:flex-row px-4 sm:px-0">
+        
+        <div class="mt-10 sm:mt-0 m-auto sm:m-0">
+          <a href="#">
+            <div class="flex justify-center hover:shadow-2xl border-[#F5F5F5] border-2 hover:border-[#008ECC] items-center h-[132px] w-[132px] bg-[#F5F5F5] rounded-[50%]">
+              <img src="../dist/images/category-1.png" alt="mobile">
+            </div>
+            <h1 class="text-center mt-4">موبایل</h1>
+          </a>
+        </div>
+
+        <div class="mt-10 sm:mt-0 m-auto sm:m-0">
+          <a href="#">
+            <div class="flex justify-center hover:shadow-2xl border-[#F5F5F5] border-2 hover:border-[#008ECC] items-center h-[132px] w-[132px] bg-[#F5F5F5] rounded-[50%]">
+              <img src="../dist/images/category-2.png" alt="mobile">
+            </div>
+            <h1 class="text-center mt-4">لوازم آرایشی بهداشتی</h1>
+          </a>
+        </div>
+
+        <div class="mt-10 sm:mt-0 m-auto sm:m-0">
+          <a href="#">
+            <div class="flex justify-center hover:shadow-2xl border-[#F5F5F5] border-2 hover:border-[#008ECC] items-center h-[132px] w-[132px] bg-[#F5F5F5] rounded-[50%]">
+              <img src="../dist/images/category-3.png" alt="mobile">
+            </div>
+            <h1 class="text-center mt-4">لوازم الکترونیکی</h1>
+          </a>
+        </div>
+
+        <div class="mt-10 sm:mt-0 m-auto sm:m-0">
+          <a href="#">
+            <div class="flex justify-center hover:shadow-2xl border-[#F5F5F5] border-2 hover:border-[#008ECC] items-center h-[132px] w-[132px] bg-[#F5F5F5] rounded-[50%]">
+              <img src="../dist/images/category-4.png" alt="mobile">
+            </div>
+            <h1 class="text-center mt-4">مبلمان</h1>
+          </a>
+        </div>
+
+        <div class="mt-10 sm:mt-0 m-auto sm:m-0">
+          <a href="#">
+            <div class="flex justify-center hover:shadow-2xl border-[#F5F5F5] border-2 hover:border-[#008ECC] items-center h-[132px] w-[132px] bg-[#F5F5F5] rounded-[50%]">
+              <img src="../dist/images/category-5.png" alt="mobile">
+            </div>
+            <h1 class="text-center mt-4">ساعت</h1>
+          </a>
+        </div>
+
+        <div class="mt-10 sm:mt-0 m-auto sm:m-0">
+          <a href="#">
+            <div class="flex justify-center hover:shadow-2xl border-[#F5F5F5] border-2 hover:border-[#008ECC] items-center h-[132px] w-[132px] bg-[#F5F5F5] rounded-[50%]">
+              <img src="../dist/images/category-7.png" alt="mobile">
+            </div>
+            <h1 class="text-center mt-4">تجهیزات جانبی</h1>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container m-auto mt-[32px]">
+      <div class="relative flex justify-between px-4 sm:px-0">
+        <h1 class="text-[#666666] text-[16px] sm:text-[20px] font-bold border-b-4 border-[#008ECC] w-fit pb-2">بهترین برندهای  <span class="text-[#008ECC]">الکترونیکی</span></h1>
+
+        <a class="flex items-center text-[14px] hover:text-[#E3BC01]" href="#">مشاهده همه <iconify-icon icon="material-symbols:chevron-left" style="color: #008ECC; font-size: 18px"></iconify-icon></a>
+        <hr class="absolute bottom-0 w-full">
+      </div>
+
+      <div class="flex gap-5 items-center justify-center mt-[24px] mb-10 flex-wrap flex-col sm:flex-row px-4 sm:px-0">
+        
+        <div class="h-[210px] w-[98%] lg:w-[31%] bg-[#404040] rounded-[16px] relative overflow-hidden">
+          <a href="#">
+            <div class="z-0 w-[246px] h-[246px] border-2 border-[#494949] rounded-[50%] absolute top-[-80px] right-[-40px] flex items-center justify-center">
+              <div class="w-[226px] h-[226px] bg-[#494949] rounded-[50%]"></div>
+            </div>
+
+            <div class="bg-[#494949] w-fit absolute left-[20px] top-[20px] rounded-md">
+              <p class="text-[12px] p-2 text-white font-light">IPHONE</p>
+            </div>
+
+            <img class="absolute top-[75px] left-[20px]" src="../dist/images/iphone.png" alt="iphone">
+
+            <p class="absolute left-[20px] text-white bottom-[20px] font-bold">تا 20% تخفیف</p>
+            
+            <img class="absolute right-[20px] top-[15px]" src="../dist/images/iphone-image.png" height="140" width="140" alt="">
+          </a>
+        </div>
+
+        <div class="h-[210px] w-[98%] lg:w-[31%] bg-[#FFF3CC] rounded-[16px] relative overflow-hidden">
+          <a href="#">
+            <div class="z-0 w-[246px] h-[246px] border-2 border-[#F6DE8D] rounded-[50%] absolute top-[-80px] right-[-40px] flex items-center justify-center">
+              <div class="w-[226px] h-[226px] bg-[#F6DE8D] rounded-[50%]"></div>
+            </div>
+
+            <div class="bg-[#F6DE8D] w-fit absolute left-[20px] top-[20px] rounded-md">
+              <p class="text-[12px] p-2 text-black font-light">REALME</p>
+            </div>
+
+            <img class="absolute top-[75px] left-[20px]" src="../dist/images/realme.png" alt="iphone">
+
+            <p class="absolute left-[20px] text-black bottom-[20px] font-bold">تا 20% تخفیف</p>
+            
+            <img class="absolute right-[20px] top-[15px]" src="../dist/images/realme-image.png" height="140" width="140" alt="">
+          </a>
+        </div>
+
+        <div class="h-[210px] w-[98%] lg:w-[31%] bg-[#FFECDF] rounded-[16px] relative overflow-hidden">
+          <a href="#">
+            <div class="z-0 w-[246px] h-[246px] border-2 border-[#FFD1B0] rounded-[50%] absolute top-[-80px] right-[-40px] flex items-center justify-center">
+              <div class="w-[226px] h-[226px] bg-[#FFD1B0] rounded-[50%]"></div>
+            </div>
+
+            <div class="bg-[#FFD1B0] w-fit absolute left-[20px] top-[20px] rounded-md">
+              <p class="text-[12px] p-2 text-black font-light">IPHONE</p>
+            </div>
+
+            <img class="absolute top-[75px] left-[20px]" src="../dist/images/xiaomi.png" alt="iphone">
+
+            <p class="absolute left-[20px] text-black bottom-[20px] font-bold">تا 20% تخفیف</p>
+            
+            <img class="absolute right-[20px] top-[15px]" src="../dist/images/xiaomi-image.png" height="140" width="140" alt="">
+          </a>
+        </div>
+    </section>
   </main>
+
+  <footer class="bg-[#008ECC] text-white relative overflow-hidden">
+    <div class="z-[0] w-[400px] h-[400px] border-2 border-[#05ABF3] rounded-[50%] absolute top-[-90px] left-[-50px] flex items-center justify-center">
+      <div class="w-[380px] h-[380px] bg-[#05ABF3] rounded-[50%]"></div>
+    </div>
+
+    <section class="container mx-auto py-[48px] flex justify-between items-center lg:items-start lg:flex-row flex-col-reverse">
+      <div class="lg:w-[28%] w-[50%] mt-[34px] lg:mt-[0px] z-10">
+        <img src="../dist/images/MegaMart.png" alt="megamarket">
+
+        <h6 class="text-[20px] font-bold mt-[34px] mb-[20px]">ارتباط با ما</h6>
+        
+        <div class="flex text-[14px] font-light">
+          <iconify-icon class="mr-2" icon="ic:baseline-whatsapp" style="color: #FFF; font-size: 22px"></iconify-icon>
+          <div>
+            <p>Whats App</p>
+            <p>۰۹۹۱۸۸۵۲۱۹۴</p>
+          </div>
+        </div>
+
+        <div class="flex text-[14px] font-light">
+          <iconify-icon class="mr-2" icon="fluent:call-28-regular" style="color: #FFF; font-size: 22px"></iconify-icon>
+          <div>
+            <p>تلفن تماس</p>
+            <p>۰۹۹۱۸۸۵۲۱۹۴</p>
+          </div>
+        </div>
+
+        <h6 class="text-[20px] font-bold mt-[20px] mb-[16px]">دانلود نرم افزار</h6>
+        <img class="cursor-pointer" src="../dist/images/download.png" />
+      </div>
+
+      <div class="lg:w-[28%] w-[50%] z-10">
+        <h6 class="text-[20px] font-bold mt-[34px] mb-[20px] border-b-4 border-white pb-4 text-center">محبوب ترین دسته بندی ها</h6>
+        
+        <ul class="leading-8 list-disc">
+          <li><a class="hover:text-[#E3BC01]" href="#">نوشیدنی ها</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">مراقبت شخصی</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">مراقبت در منزل</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">مراقبت کودک</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">سبزیجات و میوه ها</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">تنقلات و غذاها</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">لبنیات و نانوایی</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="lg:w-[28%] w-[50%] z-10">
+        <h6 class="text-[20px] font-bold mt-[34px] mb-[20px] border-b-4 border-white pb-4 text-center">خدمات مشتری</h6>
+        
+        <ul class="leading-8 list-disc">
+          <li><a class="hover:text-[#E3BC01]" href="#">درباره ما</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">شرایط و ضوابط</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">سوالات متداول</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">سیاست حفظ حریم خصوصی</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">سیاست زباله الکترونیکی</a></li>
+          <li><a class="hover:text-[#E3BC01]" href="#">سیاست لغو و بازپرداخت</a></li>
+        </ul>
+
+      </div>
+
+      <hr>
+    </section>
+
+    <div class="container m-auto py-[30px] border-t-2 border-[#05ABF3] z-10">
+      <p class="text-center text-[14px] font-light px-4">۱۴۰۲ © طبق ماده 12 فصل سوم قانون جرائم رایانه‌ای هرگونه کپی برداری از طرح قالب، مطالب و فایل‌های تارنمای مگا مارکت به هر نحو، پیگرد قانونی دارد</p>
+    </div>
+
+  </footer>
 
   <script src="../dist/js/jquery-3.7.0.min.js"></script>
   <script src="../dist/js/owl.carousel.min.js"></script>

@@ -22,4 +22,11 @@
 
 body {
   font-family: Vazirmatn;
+  background: #EAEAEA;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+hr {
+  border-color: #FFF;
 }

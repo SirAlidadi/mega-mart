@@ -578,6 +578,10 @@ video {
   bottom: 20px;
 }
 
+.left-\[-50px\]{
+  left: -50px;
+}
+
 .left-\[10\%\]{
   left: 10%;
 }
@@ -622,6 +626,10 @@ video {
   top: -80px;
 }
 
+.top-\[-90px\]{
+  top: -90px;
+}
+
 .top-\[15px\]{
   top: 15px;
 }
@@ -638,40 +646,12 @@ video {
   top: 75px;
 }
 
-.right-\[-50px\]{
-  right: -50px;
-}
-
-.top-\[-90px\]{
-  top: -90px;
-}
-
-.top-\[-0px\]{
-  top: -0px;
-}
-
-.left-\[-50px\]{
-  left: -50px;
-}
-
 .z-0{
   z-index: 0;
 }
 
 .z-10{
   z-index: 10;
-}
-
-.z-\[-10\]{
-  z-index: -10;
-}
-
-.z-\[-1\]{
-  z-index: -1;
-}
-
-.z-\[-\]{
-  z-index: -;
 }
 
 .z-\[0\]{
@@ -823,36 +803,12 @@ video {
   height: 32px;
 }
 
-.h-\[400px\]{
-  height: 400px;
-}
-
-.h-\[350px\]{
-  height: 350px;
-}
-
-.h-\[3px\]{
-  height: 3px;
-}
-
 .h-\[380px\]{
   height: 380px;
 }
 
-.h-\[370px\]{
-  height: 370px;
-}
-
-.h-\[360px\]{
-  height: 360px;
-}
-
-.h-\[310px\]{
-  height: 310px;
-}
-
-.h-\[280px\]{
-  height: 280px;
+.h-\[400px\]{
+  height: 400px;
 }
 
 .w-56{
@@ -875,16 +831,24 @@ video {
   width: 300px;
 }
 
+.w-\[380px\]{
+  width: 380px;
+}
+
 .w-\[40\%\]{
   width: 40%;
+}
+
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-\[50\%\]{
   width: 50%;
 }
 
-.w-\[80\%\]{
-  width: 80%;
+.w-\[98\%\]{
+  width: 98%;
 }
 
 .w-fit{
@@ -894,58 +858,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[400px\]{
-  width: 400px;
-}
-
-.w-\[350px\]{
-  width: 350px;
-}
-
-.w-\[3px\]{
-  width: 3px;
-}
-
-.w-\[380px\]{
-  width: 380px;
-}
-
-.w-\[370px\]{
-  width: 370px;
-}
-
-.w-\[360px\]{
-  width: 360px;
-}
-
-.w-\[310px\]{
-  width: 310px;
-}
-
-.w-\[280px\]{
-  width: 280px;
-}
-
-.w-\[100\%\]{
-  width: 100%;
-}
-
-.w-\[90\%\]{
-  width: 90%;
-}
-
-.w-\[95\%\]{
-  width: 95%;
-}
-
-.w-\[98\%\]{
-  width: 98%;
-}
-
-.w-\[\]{
-  width: ;
 }
 
 .min-w-\[227px\]{
@@ -1012,12 +924,12 @@ video {
   gap: 1rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .overflow-hidden{
@@ -1053,10 +965,6 @@ video {
   border-width: 2px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1076,6 +984,11 @@ video {
 .border-\[\#008ECC\]{
   --tw-border-opacity: 1;
   border-color: rgb(0 142 204 / var(--tw-border-opacity));
+}
+
+.border-\[\#05ABF3\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(5 171 243 / var(--tw-border-opacity));
 }
 
 .border-\[\#494949\]{
@@ -1108,14 +1021,14 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-\[\#05ABF3\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(5 171 243 / var(--tw-border-opacity));
-}
-
 .bg-\[\#008ECC\]{
   --tw-bg-opacity: 1;
   background-color: rgb(0 142 204 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#05ABF3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 171 243 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#404040\]{
@@ -1173,15 +1086,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#\#05ABF3\]{
-  background-color: ##05ABF3;
-}
-
-.bg-\[\#05ABF3\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 171 243 / var(--tw-bg-opacity));
-}
-
 .p-2{
   padding: 0.5rem;
 }
@@ -1217,14 +1121,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-\[48px\]{
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
 .py-\[30px\]{
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.py-\[48px\]{
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .pb-2{
@@ -1282,8 +1186,8 @@ video {
   line-height: 2rem;
 }
 
-.text-\[1\.7vw\]{
-  font-size: 1.7vw;
+.text-\[1\.6vw\]{
+  font-size: 1.6vw;
 }
 
 .text-\[12px\]{
@@ -1311,15 +1215,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-\[1\.6vw\]{
-  font-size: 1.6vw;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1330,14 +1225,6 @@ video {
 
 .font-light{
   font-weight: 300;
-}
-
-.font-\[18px\]{
-  font-weight: 18px;
-}
-
-.font-\[14px\]{
-  font-weight: 14px;
 }
 
 .leading-8{
@@ -1526,14 +1413,6 @@ hr {
 
   .lg\:w-\[31\%\]{
     width: 31%;
-  }
-
-  .lg\:w-\[80\]{
-    width: 80;
-  }
-
-  .lg\:w-\[80\%\]{
-    width: 80%;
   }
 
   .lg\:flex-row{
